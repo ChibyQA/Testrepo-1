@@ -8,5 +8,3 @@ jobs:
         steps: 
         - name: Get Git
           run: git version
-        -  name: Get navenversion
-           run: nvm --version
