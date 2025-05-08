@@ -9,4 +9,4 @@ jobs:
         - name: Get Git
           run: git version
         -  name: Get navenversion
-           run: nvn --version
+           run: nvm --version
