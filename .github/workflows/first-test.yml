@@ -1,0 +1,12 @@
+name: My first Push
+on: push
+
+job:
+    getserviceversions:
+    runs-on: ubuntu-latest
+
+    steps: 
+    - name: Get Git
+    -  run: git version
+    -  name: Get marvin
+    -  run: nvn --version
