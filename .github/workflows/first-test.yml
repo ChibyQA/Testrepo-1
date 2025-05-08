@@ -1,4 +1,4 @@
-name: My first Push
+name: first Push
 on: push
 
 jobs:
@@ -7,6 +7,6 @@ jobs:
 
         steps: 
         - name: Get Git
-        -  run: git version
+          run: git version
         -  name: Get marvin
-        -  run: nvn --version
+           run: nvn --version
