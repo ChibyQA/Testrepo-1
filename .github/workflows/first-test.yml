@@ -7,4 +7,20 @@ jobs:
 
         steps: 
         - name: Get Git
-          run: git version
+          run: |
+              git version
+              nvn --version
+
+        getimage:
+            runs-on: ubuntu-latest
+
+            needs: getserviceversions
+
+            steps:
+            - name: getDockerVersion
+            run: |
+                docker --version
+                docker pull mysql
+                docker run -d --name con -e 'MYSQL_ROOT_PASSWORD=1234' mysql
+              
+          
